@@ -1,0 +1,20 @@
+.left_form{
+    -fx-background-color: linear-gradient(to bottom right, #4d96a8,#5f0dd1);
+    -fx-border-color: #000;
+    -fx-border-width:   4px 0px 0px 4px;
+}
+
+.right_form{
+    -fx-background-color: #fff;
+    -fx-border-color: #000;
+    -fx-border-width: 4px 0px 0px 4px;
+}
+
+.close{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.close:hover{
+    -fx-background-color: red;
+}
