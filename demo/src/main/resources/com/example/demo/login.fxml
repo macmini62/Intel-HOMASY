@@ -12,49 +12,62 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.LogInController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.LogInController">
 
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0">
          <children>
             <AnchorPane id="left_form" fx:id="left_form" layoutX="6.0" prefHeight="400.0" prefWidth="296.0" styleClass="left_form" stylesheets="@login.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Label layoutX="102.0" layoutY="32.0" text="Intel" underline="true">
+                  <Label layoutX="143.0" layoutY="38.0" text="Intel" underline="true">
                      <font>
                         <Font name="Serif Bold" size="36.0" />
                      </font>
                   </Label>
-                  <Label layoutX="34.0" layoutY="253.0" text="Management System">
+                  <Label layoutX="67.0" layoutY="347.0" text="Management System">
                      <font>
                         <Font name="Serif Bold" size="20.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="67.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="110.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@home.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
-            <AnchorPane fx:id="right_form" layoutX="300.0" prefHeight="400.0" prefWidth="296.0" styleClass="right_form" stylesheets="@login.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane fx:id="right_form" layoutX="372.0" prefHeight="600.0" prefWidth="478.0" styleClass="right_form" stylesheets="@login.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="372.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Label layoutX="93.0" layoutY="104.0" text="Welcome Back!" textFill="#5f0dd1">
+                  <Label layoutX="105.0" layoutY="188.0" text="Welcome Back!" textFill="#5f0dd1">
                      <font>
-                        <Font name="Serif Bold" size="18.0" />
+                        <Font name="Serif Bold" size="24.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="46.0" layoutY="159.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" />
-                  <PasswordField layoutX="46.0" layoutY="215.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" />
-                  <Button layoutX="114.0" layoutY="301.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="LogIn" />
-                  <Button layoutX="246.0" layoutY="8.0" minWidth="37.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="37.0" styleClass="close" stylesheets="@login.css" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="2.0">
+                  <TextField fx:id="username" layoutX="115.0" layoutY="256.0" onAction="#loginUser" prefHeight="30.0" prefWidth="220.0" promptText="Username" />
+                  <PasswordField fx:id="password" layoutX="115.0" layoutY="315.0" onAction="#loginUser" prefHeight="30.0" prefWidth="220.0" promptText="Password" />
+                  <Button fx:id="login_btn" layoutX="159.0" layoutY="407.0" mnemonicParsing="false" onAction="#loginUser" prefHeight="30.0" prefWidth="100.0" style="-fx-cursor: hand;" text="LogIn" />
+                  <Button fx:id="close_btn" layoutX="239.0" layoutY="10.0" minWidth="30.0" mnemonicParsing="false" onAction="#close" prefHeight="30.0" prefWidth="30.0" style="-fx-cursor: hand;" styleClass="close" stylesheets="@login.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
                      <graphic>
                      </graphic>
+                     <graphic>
+                        <ImageView fx:id="image" fitHeight="30.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true" scaleX="0.5" scaleY="0.5">
+                           <image>
+                              <Image url="@close.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
                   </Button>
-                  <ImageView fitHeight="97.0" fitWidth="200.0" layoutX="123.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="128.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@profile-user.png" />
                      </image>
                   </ImageView>
+                  <Label layoutX="26.0" layoutY="546.0" text="Don't Have An Account?">
+                     <font>
+                        <Font name="Serif Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="signup_btn" layoutX="209.0" layoutY="539.0" mnemonicParsing="false" style="-fx-background-color: blue; -fx-cursor: hand;" text="Sign Up" textFill="#104de8" underline="true" />
                </children>
             </AnchorPane>
          </children>
