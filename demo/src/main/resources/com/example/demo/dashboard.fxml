@@ -1,20 +1,237 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
-
 
 <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0">
          <children>
-            <Label layoutX="199.0" layoutY="32.0" text="Welcome User">
-               <font>
-                  <Font name="Serif Bold" size="48.0" />
-               </font>
-            </Label>
+            <BorderPane prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="60.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane prefHeight="30.0" prefWidth="800.0" styleClass="top_form" stylesheets="@dashboard.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Button layoutX="741.0" layoutY="17.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="0.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@close.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <ImageView fitHeight="60.0" fitWidth="200.0" layoutX="1.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="739.0" AnchorPane.topAnchor="2.0">
+                                 <image>
+                                    <Image url="@home.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="77.0" layoutY="22.0" text="Intel Management System">
+                                 <font>
+                                    <Font name="Serif Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="684.0" layoutY="17.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="0.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="2.0">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@delete.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutY="-2.0" prefHeight="540.0" prefWidth="200.0" styleClass="nav-form" stylesheets="@dashboard.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0">
+                           <children>
+                              <ImageView fitHeight="100.0" fitWidth="150.0" layoutX="50.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="8.0">
+                                 <image>
+                                    <Image url="@profile-user.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="63.0" layoutY="115.0" text="Welcome">
+                                 <font>
+                                    <Font name="Serif Regular" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="58.0" layoutY="140.0" text="Evanson" textFill="#bed3da">
+                                 <font>
+                                    <Font name="Serif Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="100.0" layoutX="85.0" layoutY="176.0" startX="-76.5" />
+                              <Button layoutX="19.0" layoutY="184.0" mnemonicParsing="false" styleClass="nav-button" stylesheets="@dashboard.css" text="Home" AnchorPane.bottomAnchor="325.0">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5" scaleZ="1.5">
+                                       <image>
+                                          <Image url="@home%20(1).png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="17.0" layoutY="221.0" mnemonicParsing="false" styleClass="nav-button" stylesheets="@dashboard.css" text="Profile">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
+                                       <image>
+                                          <Image url="@user.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="14.0" layoutY="262.0" mnemonicParsing="false" styleClass="nav-button" stylesheets="@dashboard.css" text="Notifications">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
+                                       <image>
+                                          <Image url="@notification.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="10.0" layoutY="301.0" mnemonicParsing="false" styleClass="nav-button" stylesheets="@dashboard.css" text="Finances">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
+                                       <image>
+                                          <Image url="@hand.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="14.0" layoutY="341.0" mnemonicParsing="false" styleClass="nav-button" stylesheets="@dashboard.css" text="Rate Us">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
+                                       <image>
+                                          <Image url="@review.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="7.0" layoutY="383.0" mnemonicParsing="false" styleClass="nav-button" stylesheets="@dashboard.css" text="FeedBack">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
+                                       <image>
+                                          <Image url="@chat.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="7.0" layoutY="495.0" mnemonicParsing="false" styleClass="nav-button" stylesheets="@dashboard.css" text="Sign Out">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
+                                       <image>
+                                          <Image url="@logout.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="123.0" layoutY="87.0" prefHeight="537.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="511.0" prefWidth="575.0" styleClass="white-bg" stylesheets="@dashboard.css" />
+                              <AnchorPane layoutX="24.0" layoutY="24.0" prefHeight="89.0" prefWidth="559.0" styleClass="white-bg" stylesheets="@dashboard.css">
+                                 <children>
+                                    <AnchorPane layoutX="7.0" layoutY="7.0" prefHeight="71.0" prefWidth="73.0" styleClass="card" stylesheets="@dashboard.css">
+                                       <children>
+                                          <Label layoutY="44.0" prefHeight="27.0" prefWidth="45.0" text="Index" />
+                                          <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@list.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="37.0" layoutY="2.0" prefHeight="28.0" prefWidth="33.0" text="0" textFill="WHITE" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="103.0" layoutY="5.0" prefHeight="71.0" prefWidth="103.0" styleClass="card" stylesheets="@dashboard.css">
+                                       <children>
+                                          <Label layoutY="44.0" prefHeight="27.0" prefWidth="45.0" text="Rooms" />
+                                          <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@bed.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="37.0" layoutY="2.0" prefHeight="28.0" prefWidth="33.0" textFill="WHITE" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="228.0" layoutY="5.0" prefHeight="71.0" prefWidth="95.0" styleClass="card" stylesheets="@dashboard.css">
+                                       <children>
+                                          <Label layoutY="44.0" prefHeight="27.0" prefWidth="45.0" text="Status" />
+                                          <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@clipboard.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="37.0" layoutY="2.0" prefHeight="28.0" prefWidth="33.0" text="0" textFill="WHITE" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="346.0" layoutY="5.0" prefHeight="71.0" prefWidth="99.0" styleClass="card" stylesheets="@dashboard.css">
+                                       <children>
+                                          <Label layoutY="44.0" prefHeight="27.0" prefWidth="79.0" text="Description" />
+                                          <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@shopping.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="37.0" layoutY="2.0" prefHeight="28.0" prefWidth="33.0" textFill="WHITE" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="457.0" layoutY="7.0" prefHeight="71.0" prefWidth="97.0" styleClass="card" stylesheets="@dashboard.css">
+                                       <children>
+                                          <Label layoutY="44.0" prefHeight="27.0" prefWidth="45.0" text="Price" />
+                                          <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@price-tag.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="46.0" layoutY="15.0" prefHeight="28.0" prefWidth="33.0" textFill="WHITE" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="136.0" layoutY="60.0" prefHeight="537.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="510.0" prefWidth="573.0" stylesheets="@dashboard.css">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <AnchorPane prefHeight="191.0" prefWidth="573.0" stylesheets="@dashboard.css">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
          </children>
       </AnchorPane>
    </children>
