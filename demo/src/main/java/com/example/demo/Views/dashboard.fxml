@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="60.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane prefHeight="30.0" prefWidth="800.0" styleClass="top_form" stylesheets="@../CSS/dashboard.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Button layoutX="741.0" layoutY="17.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="0.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../resources/com/example/demo/Icons/close.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <ImageView fitHeight="60.0" fitWidth="200.0" layoutX="1.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="739.0" AnchorPane.topAnchor="2.0">
+                                 <image>
+                                    <Image url="@../../../../../resources/com/example/demo/Icons/home.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="77.0" layoutY="22.0" text="Intel Management System">
+                                 <font>
+                                    <Font name="Serif Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="684.0" layoutY="17.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="0.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="2.0">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../resources/com/example/demo/Icons/delete.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane fx:id="left_pane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane fx:id="left_inner_pane" layoutY="-2.0" prefHeight="540.0" prefWidth="200.0" styleClass="nav-form" stylesheets="@../CSS/dashboard.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0">
+                           <children>
+                              <ImageView fx:id="profile_img" fitHeight="100.0" fitWidth="150.0" layoutX="50.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="8.0">
+                                 <image>
+                                    <Image url="@../../../../../resources/com/example/demo/Icons/profile-user.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="welcome_label" alignment="CENTER" contentDisplay="CENTER" layoutX="63.0" layoutY="115.0" text="Welcome">
+                                 <font>
+                                    <Font name="Serif Regular" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="username_label" alignment="CENTER" contentDisplay="CENTER" layoutX="58.0" layoutY="140.0" text="Evanson" textFill="#bed3da">
+                                 <font>
+                                    <Font name="Serif Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="100.0" layoutX="85.0" layoutY="176.0" startX="-76.5" />
+                              <Button fx:id="home_btn" layoutX="19.0" layoutY="184.0" mnemonicParsing="false" styleClass="nav-button" stylesheets="@../CSS/dashboard.css" text="Home" AnchorPane.bottomAnchor="325.0">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5" scaleZ="1.5">
+                                       <image>
+                                          <Image url="@../../../../../resources/com/example/demo/Icons/home (1).png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="profile_btn" layoutX="17.0" layoutY="221.0" mnemonicParsing="false" styleClass="nav-button" stylesheets="@../CSS/dashboard.css" text="Profile">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
+                                       <image>
+                                          <Image url="@../../../../../resources/com/example/demo/Icons/user.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="notifications_btn" layoutX="14.0" layoutY="262.0" mnemonicParsing="false" styleClass="nav-button" stylesheets="@../CSS/dashboard.css" text="Notifications">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
+                                       <image>
+                                          <Image url="@../../../../../resources/com/example/demo/Icons/notification.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="finances_btn" layoutX="10.0" layoutY="301.0" mnemonicParsing="false" styleClass="nav-button" stylesheets="@../CSS/dashboard.css" text="Finances">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
+                                       <image>
+                                          <Image url="@../../../../../resources/com/example/demo/Icons/hand.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="rateUs_btn" layoutX="14.0" layoutY="341.0" mnemonicParsing="false" styleClass="nav-button" stylesheets="@../CSS/dashboard.css" text="Rate Us">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
+                                       <image>
+                                          <Image url="@../../../../../resources/com/example/demo/Icons/review.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="feedBack_btn" layoutX="7.0" layoutY="383.0" mnemonicParsing="false" styleClass="nav-button" stylesheets="@../CSS/dashboard.css" text="FeedBack">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
+                                       <image>
+                                          <Image url="@../../../../../resources/com/example/demo/Icons/chat.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="signOut_btn" layoutX="7.0" layoutY="495.0" mnemonicParsing="false" styleClass="nav-button" stylesheets="@../CSS/dashboard.css" text="Sign Out">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
+                                       <image>
+                                          <Image url="@../../../../../resources/com/example/demo/Icons/logout.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="123.0" layoutY="87.0" prefHeight="537.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="511.0" prefWidth="575.0" styleClass="white-bg" stylesheets="@../CSS/dashboard.css" />
+                              <AnchorPane layoutX="24.0" layoutY="24.0" prefHeight="89.0" prefWidth="559.0" styleClass="white-bg" stylesheets="@../CSS/dashboard.css">
+                                 <children>
+                                    <AnchorPane layoutX="7.0" layoutY="7.0" prefHeight="71.0" prefWidth="73.0" styleClass="card" stylesheets="@../CSS/dashboard.css">
+                                       <children>
+                                          <Label layoutY="44.0" prefHeight="27.0" prefWidth="45.0" text="Index" />
+                                          <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../../resources/com/example/demo/Icons/list.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="37.0" layoutY="2.0" prefHeight="28.0" prefWidth="33.0" text="0" textFill="WHITE" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="103.0" layoutY="5.0" prefHeight="71.0" prefWidth="103.0" styleClass="card" stylesheets="@../CSS/dashboard.css">
+                                       <children>
+                                          <Label layoutY="44.0" prefHeight="27.0" prefWidth="45.0" text="Rooms" />
+                                          <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../../resources/com/example/demo/Icons/bed.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="37.0" layoutY="2.0" prefHeight="28.0" prefWidth="33.0" textFill="WHITE" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="228.0" layoutY="5.0" prefHeight="71.0" prefWidth="95.0" styleClass="card" stylesheets="@../CSS/dashboard.css">
+                                       <children>
+                                          <Label layoutY="44.0" prefHeight="27.0" prefWidth="45.0" text="Status" />
+                                          <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../../resources/com/example/demo/Icons/clipboard.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="37.0" layoutY="2.0" prefHeight="28.0" prefWidth="33.0" text="0" textFill="WHITE" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="346.0" layoutY="5.0" prefHeight="71.0" prefWidth="99.0" styleClass="card" stylesheets="@../CSS/dashboard.css">
+                                       <children>
+                                          <Label layoutY="44.0" prefHeight="27.0" prefWidth="79.0" text="Description" />
+                                          <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../../resources/com/example/demo/Icons/shopping.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="37.0" layoutY="2.0" prefHeight="28.0" prefWidth="33.0" textFill="WHITE" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="457.0" layoutY="7.0" prefHeight="71.0" prefWidth="97.0" styleClass="card" stylesheets="@../CSS/dashboard.css">
+                                       <children>
+                                          <Label layoutY="44.0" prefHeight="27.0" prefWidth="45.0" text="Price" />
+                                          <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../../resources/com/example/demo/Icons/price-tag.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label layoutX="46.0" layoutY="15.0" prefHeight="28.0" prefWidth="33.0" textFill="WHITE" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="136.0" layoutY="60.0" prefHeight="537.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="510.0" prefWidth="573.0" stylesheets="@../CSS/dashboard.css">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <AnchorPane prefHeight="317.0" prefWidth="573.0" stylesheets="@../CSS/dashboard.css">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                       <children>
+                                          <TextField fx:id="book_search" layoutX="44.0" layoutY="14.0" promptText="search" />
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="24.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../../resources/com/example/demo/Icons/search.png" />
+                                             </image>
+                                          </ImageView>
+                                          <TableView fx:id="book_table" layoutX="14.0" layoutY="59.0" prefHeight="247.0" prefWidth="551.0">
+                                            <columns>
+                                              <TableColumn fx:id="book_index_col" prefWidth="75.0" text="Index" />
+                                              <TableColumn fx:id="book_roomNo_col" prefWidth="94.0" text="Room No" />
+                                                <TableColumn fx:id="book_status_col" prefWidth="93.0" text="Status" />
+                                                <TableColumn fx:id="book_description_col" prefWidth="143.0" text="Description" />
+                                                <TableColumn fx:id="book_price_col" prefWidth="137.0" text="Price" />
+                                            </columns>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                    <Label fx:id="book_pane" layoutX="20.0" layoutY="345.0" prefHeight="16.0" prefWidth="50.0" text="Index">
+                                       <font>
+                                          <Font name="Serif Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="book_index_tfield" layoutX="107.0" layoutY="343.0" styleClass="textfield" stylesheets="@../CSS/dashboard.css" />
+                                    <Label layoutX="20.0" layoutY="390.0" prefHeight="19.0" prefWidth="87.0" text="Room No">
+                                       <font>
+                                          <Font name="Serif Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="book_price_tfield" layoutX="107.0" layoutY="445.0" styleClass="textfield" stylesheets="@../CSS/dashboard.css" />
+                                    <Label layoutX="26.0" layoutY="448.0" prefHeight="16.0" prefWidth="50.0" text="Price">
+                                       <font>
+                                          <Font name="Serif Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox fx:id="book_room_combo" layoutX="107.0" layoutY="388.0" prefWidth="150.0" promptText="Choose" styleClass="textfield" stylesheets="@../CSS/dashboard.css" />
+                                    <Button fx:id="book_btn" layoutX="377.0" layoutY="444.0" mnemonicParsing="false" styleClass="book-btn" stylesheets="@../CSS/dashboard.css" text="Book Now!">
+                                       <font>
+                                          <Font name="Serif Bold" size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="63.0" layoutY="69.0" prefHeight="537.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="14.0" layoutY="12.0" prefHeight="511.0" prefWidth="571.0" styleClass="shadow" stylesheets="@../CSS/dashboard.css">
+                                 <children>
+                                    <TableView fx:id="center_table_pane" layoutX="14.0" layoutY="14.0" onSort="#user_finance_table" prefHeight="476.0" prefWidth="544.0" stylesheets="@../CSS/dashboard.css">
+                                      <columns>
+                                          <TableColumn fx:id="finance_index_clmn" prefWidth="75.0" text="Index" />
+                                        <TableColumn fx:id="finance_roomNo_clmn" prefWidth="75.0" text="Room No" />
+                                          <TableColumn fx:id="finance_price_clmn" prefWidth="75.0" text="Price" />
+                                          <TableColumn fx:id="finance_amountPaid_clmn" prefWidth="110.0" text="Amount Paid" />
+                                          <TableColumn fx:id="finance_balance_clmn" prefWidth="102.0" text="Balance" />
+                                          <TableColumn fx:id="finance_data_clmn" prefWidth="100.0" text="Date" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="8.0" layoutY="38.0" prefHeight="537.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="16.0" layoutY="14.0" prefHeight="505.0" prefWidth="567.0" stylesheets="@../CSS/dashboard.css">
+                                 <children>
+                                    <AnchorPane layoutX="18.0" layoutY="9.0" prefHeight="484.0" prefWidth="244.0" styleClass="pane_color" stylesheets="@../CSS/dashboard.css">
+                                       <children>
+                                          <AnchorPane layoutX="8.0" layoutY="9.0" prefHeight="468.0" prefWidth="227.0" styleClass="white-bg" stylesheets="@../CSS/dashboard.css">
+                                             <children>
+                                                <ImageView fitHeight="111.0" fitWidth="168.0" layoutX="75.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="round">
+                                                   <image>
+                                                      <Image url="@../../../../../resources/com/example/demo/Icons/photo.jpeg" />
+                                                   </image>
+                                                   <effect>
+                                                      <Lighting>
+                                                         <bumpInput>
+                                                            <Shadow />
+                                                         </bumpInput>
+                                                         <light>
+                                                         </light>
+                                                      </Lighting>
+                                                   </effect>
+                                                </ImageView>
+                                                <Line endX="113.0" layoutX="114.0" layoutY="151.0" startX="-114.0" />
+                                                <Label layoutX="64.0" layoutY="160.0" prefHeight="16.0" prefWidth="112.0" text="Username" underline="true">
+                                                   <font>
+                                                      <Font name="Serif Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="59.0" layoutY="203.0" prefHeight="16.0" prefWidth="111.0" text="Evanson">
+                                                   <font>
+                                                      <Font name="Serif Regular" size="18.0" />
+                                                   </font></Label>
+                                                <Line endX="98.0" layoutX="114.0" layoutY="234.0" startX="-98.0" />
+                                                <Line endX="100.0" layoutX="114.0" layoutY="320.0" startX="-100.0" />
+                                                <Line endX="100.0" layoutX="113.0" layoutY="402.0" startX="-100.0" />
+                                                <Label fx:id="profile_show_room" layoutX="83.0" layoutY="292.0" prefHeight="16.0" prefWidth="111.0" text="A6">
+                                                   <font>
+                                                      <Font name="Serif Regular" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="profile_bio" layoutX="83.0" layoutY="331.0" prefHeight="16.0" prefWidth="112.0" text="Bio" underline="true">
+                                                   <font>
+                                                      <Font name="Serif Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="profile_months" layoutX="23.0" layoutY="409.0" prefHeight="18.0" prefWidth="194.0" text="Months As A Tenant" underline="true">
+                                                   <font>
+                                                      <Font name="Serif Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="profile_roomNo" layoutX="79.0" layoutY="253.0" prefHeight="16.0" prefWidth="112.0" text="Room" underline="true">
+                                                   <font>
+                                                      <Font name="Serif Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="profile_show_bio" layoutX="6.0" layoutY="348.0" prefHeight="44.0" prefWidth="217.0" text="I am student at chuka university">
+                                                   <font>
+                                                      <Font name="Serif Regular" size="11.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="profile_show_months" layoutX="91.0" layoutY="433.0" prefHeight="16.0" prefWidth="111.0" text="2">
+                                                   <font>
+                                                      <Font name="Serif Regular" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                    <Label layoutX="318.0" layoutY="109.0" text="Change  Username" underline="true">
+                                       <font>
+                                          <Font name="Serif Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="profile_change_username" layoutX="328.0" layoutY="142.0" promptText="Username" />
+                                    <Label layoutX="360.0" layoutY="197.0" text="Add Bio" underline="true">
+                                       <font>
+                                          <Font name="Serif Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextArea fx:id="profile_addBio" layoutX="271.0" layoutY="224.0" prefHeight="200.0" prefWidth="269.0" />
+                                    <Button fx:id="profile_save_btn" layoutX="389.0" layoutY="453.0" mnemonicParsing="false" text="Save" />
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

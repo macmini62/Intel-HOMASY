@@ -15,11 +15,11 @@
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0">
          <children>
-            <AnchorPane layoutY="-4.0" prefHeight="606.0" prefWidth="398.0" styleClass="left_form" stylesheets="@signup.css">
+            <AnchorPane layoutY="-4.0" prefHeight="606.0" prefWidth="398.0" styleClass="left_form" stylesheets="@../CSS/signup.css">
                <children>
                   <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="106.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@home.png" />
+                        <Image url="@../../../../../resources/com/example/demo/Icons/home.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="139.0" layoutY="32.0" text="Intel" underline="true">
@@ -38,7 +38,7 @@
                <children>
                   <ImageView fitHeight="150.0" fitWidth="170.0" layoutX="155.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@profile-user.png" />
+                        <Image url="@../../../../../resources/com/example/demo/Icons/profile-user.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="182.0" layoutY="165.0" text="Sign Up" textFill="#5f0dd1">
@@ -46,11 +46,11 @@
                         <Font name="Serif Bold" size="18.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="135.0" layoutY="207.0" promptText="Registration Number" styleClass="text-area" stylesheets="@signup.css" />
-                  <TextField layoutX="135.0" layoutY="242.0" promptText="UserName" styleClass="text-area" stylesheets="@signup.css" />
-                  <TextField layoutX="135.0" layoutY="287.0" promptText="Email" styleClass="text-area" stylesheets="@signup.css" />
-                  <TextField layoutX="135.0" layoutY="352.0" promptText="Emergency Contact" styleClass="text-area" stylesheets="@signup.css" />
-                  <PasswordField layoutX="135.0" layoutY="389.0" promptText="Password" styleClass="text-area" stylesheets="@signup.css" />
+                  <TextField layoutX="135.0" layoutY="207.0" promptText="Registration Number" styleClass="text-area" stylesheets="@CSS/signup.css" />
+                  <TextField layoutX="135.0" layoutY="242.0" promptText="UserName" styleClass="text-area" stylesheets="@CSS/signup.css" />
+                  <TextField layoutX="135.0" layoutY="287.0" promptText="Email" styleClass="text-area" stylesheets="@CSS/signup.css" />
+                  <TextField layoutX="135.0" layoutY="352.0" promptText="Emergency Contact" styleClass="text-area" stylesheets="@CSS/signup.css" />
+                  <PasswordField layoutX="135.0" layoutY="389.0" promptText="Password" styleClass="text-area" stylesheets="@CSS/signup.css" />
                   <RadioButton layoutX="163.0" layoutY="454.0" mnemonicParsing="false" text="Female" />
                   <RadioButton layoutX="240.0" layoutY="454.0" mnemonicParsing="false" text="Other" />
                   <RadioButton layoutX="96.0" layoutY="454.0" mnemonicParsing="false" text="Male" />
@@ -59,12 +59,12 @@
                         <Font name="Serif Regular" size="14.0" />
                      </font>
                   </Button>
-                  <TextField layoutX="135.0" layoutY="316.0" promptText="Phone Number" styleClass="text-area" stylesheets="@signup.css" />
-                  <Button layoutX="234.0" layoutY="14.0" mnemonicParsing="false" styleClass="close" stylesheets="@signup.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                  <TextField layoutX="135.0" layoutY="316.0" promptText="Phone Number" styleClass="text-area" stylesheets="@../CSS/signup.css" />
+                  <Button layoutX="234.0" layoutY="14.0" mnemonicParsing="false" styleClass="close" stylesheets="@../CSS/signup.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
                      <graphic>
                         <ImageView fitHeight="51.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@close.png" />
+                              <Image url="@../../../../../resources/com/example/demo/Icons/close.png" />
                            </image>
                         </ImageView>
                      </graphic>

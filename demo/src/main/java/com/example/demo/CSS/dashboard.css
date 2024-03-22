@@ -1,0 +1,108 @@
+.top_form{
+    -fx-background-color: #fff;
+    -fx-border-color: #000;
+    -fx-border-width: 0.4px 0.4px 0.2px 0.4px;
+}
+
+.close{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.close:hover{
+    -fx-background-color: red;
+}
+
+.minus{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.minus:hover{
+    -fx-background-color: grey;
+}
+
+.nav-form{
+    -fx-background-color:linear-gradient(to bottom right, #4d96a8,#5f0dd1);
+}
+
+.nav-button{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-text-fill:#fff;
+    -fx-font-size:15px;
+    -fx-font-family:"Arial";
+    -fx-alignment:CENTER-LEFT;
+}
+
+.white-bg{
+    -fx-background-color:#fff;
+    -fx-background-radius:8px;
+}
+/*#344250*/
+.card{
+    -fx-background-color:linear-gradient(to right, #bed3da, #3c6382);
+    -fx-background-radius:4px;
+}
+
+.shadow{
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.4), 6,0,0,0);
+}
+
+.table-view{
+    -fx-background-color:transparent;
+    -fx-padding:0px;
+    -fx-border-color:linear-gradient(to bottom right,  #4d96a8,#5f0dd1);
+    -fx-border-width:2px;
+    -fx-border-radius:8px;
+}
+
+table-view .table-column{
+    -fx-alignment: CENTER;
+}
+.table-view .column-header-background{
+    -fx-background-color:linear-gradient(to bottom right,  #4d96a8,#5f0dd1);
+    -fx-background-radius:8px 8px 0px 0px;
+    -fx-background-inset: 0 0 0 0;
+}
+.table-view .column-header, .filter{
+    -fx-background-color:transparent;
+    -fx-size:40px;
+}
+.table-view .column-header .label{
+    -fx-text-fill:#fff;
+    -fx-font-family:"Arial";
+}
+
+textfield{
+    -fx-background-color:linear-gradient(to bottom, #efefef, #eee);
+    -fx-background-radius:4px;
+    -fx-border-color:linear-gradient(to bottom right,  #4d96a8,#5f0dd1);
+    -fx-border-width:.8px;
+    -fx-font-family:"Tahoma";
+    -fx-border-radius:4px;
+}
+.textfield:focused{
+    -fx-background-color:#fff;
+    -fx-border-width:1px;
+}
+
+.book-btn{
+    -fx-background-color:#2d5278;
+    -fx-background-radius:8px;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    -fx-font-size:14px;
+    -fx-font-family:"Arial";
+}
+.book-btn:hover{
+    -fx-background-color:#2268ae;
+}
+
+.pane_color{
+    -fx-background-color:linear-gradient(to top left,  #4d96a8,#5f0dd1) ;
+}
+
+.round{
+    -fx-background-radius: 20px;
+}

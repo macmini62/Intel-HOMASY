@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.Controller;
 
 import com.example.demo.DB.DBConnection;
 import javafx.event.ActionEvent;
@@ -87,7 +87,7 @@ public class LogInController implements Initializable {
 
                     try {
                         login_btn.getScene().getWindow().hide();
-                        Parent root = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
+                        Parent root = FXMLLoader.load(getClass().getResource("../views/dashboard.fxml"));
                         Stage stage = new Stage();
                         Scene scene = new Scene(root);
                         stage.setScene(scene);
