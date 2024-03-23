@@ -28,7 +28,7 @@
                      <children>
                         <AnchorPane prefHeight="30.0" prefWidth="800.0" styleClass="top_form" stylesheets="@../CSS/dashboard.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
-                              <Button layoutX="741.0" layoutY="17.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="0.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                              <Button layoutX="741.0" layoutY="17.0" mnemonicParsing="false" onAction="#close" prefHeight="24.0" prefWidth="0.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
                                  <graphic>
                                     <ImageView fitHeight="20.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -82,7 +82,7 @@
                                  </font>
                               </Label>
                               <Line endX="100.0" layoutX="85.0" layoutY="176.0" startX="-76.5" />
-                              <Button fx:id="home_btn" layoutX="19.0" layoutY="184.0" mnemonicParsing="false" styleClass="nav-button" stylesheets="@../CSS/dashboard.css" text="Home" AnchorPane.bottomAnchor="325.0">
+                              <Button fx:id="home_btn" layoutX="19.0" layoutY="184.0" mnemonicParsing="false" onAction="#switchForm" styleClass="nav-button" stylesheets="@../CSS/dashboard.css" text="Home" AnchorPane.bottomAnchor="325.0">
                                  <graphic>
                                     <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5" scaleZ="1.5">
                                        <image>
@@ -91,7 +91,7 @@
                                     </ImageView>
                                  </graphic>
                               </Button>
-                              <Button fx:id="profile_btn" layoutX="17.0" layoutY="221.0" mnemonicParsing="false" styleClass="nav-button" stylesheets="@../CSS/dashboard.css" text="Profile">
+                              <Button fx:id="profile_btn" layoutX="17.0" layoutY="221.0" mnemonicParsing="false" onAction="#switchForm" styleClass="nav-button" stylesheets="@../CSS/dashboard.css" text="Profile">
                                  <graphic>
                                     <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
                                        <image>
@@ -100,7 +100,7 @@
                                     </ImageView>
                                  </graphic>
                               </Button>
-                              <Button fx:id="notifications_btn" layoutX="14.0" layoutY="262.0" mnemonicParsing="false" styleClass="nav-button" stylesheets="@../CSS/dashboard.css" text="Notifications">
+                              <Button fx:id="notifications_btn" layoutX="14.0" layoutY="262.0" mnemonicParsing="false" onAction="#switchForm" styleClass="nav-button" stylesheets="@../CSS/dashboard.css" text="Notifications">
                                  <graphic>
                                     <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
                                        <image>
@@ -109,7 +109,7 @@
                                     </ImageView>
                                  </graphic>
                               </Button>
-                              <Button fx:id="finances_btn" layoutX="10.0" layoutY="301.0" mnemonicParsing="false" styleClass="nav-button" stylesheets="@../CSS/dashboard.css" text="Finances">
+                              <Button fx:id="finances_btn" layoutX="10.0" layoutY="301.0" mnemonicParsing="false" onAction="#switchForm" styleClass="nav-button" stylesheets="@../CSS/dashboard.css" text="Finances">
                                  <graphic>
                                     <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
                                        <image>
@@ -136,7 +136,7 @@
                                     </ImageView>
                                  </graphic>
                               </Button>
-                              <Button fx:id="signOut_btn" layoutX="7.0" layoutY="495.0" mnemonicParsing="false" styleClass="nav-button" stylesheets="@../CSS/dashboard.css" text="Sign Out">
+                              <Button fx:id="signOut_btn" layoutX="7.0" layoutY="495.0" mnemonicParsing="false" onAction="#logout" styleClass="nav-button" stylesheets="@../CSS/dashboard.css" text="Sign Out">
                                  <graphic>
                                     <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
                                        <image>
@@ -153,7 +153,7 @@
                <center>
                   <AnchorPane prefHeight="537.0" prefWidth="589.0" BorderPane.alignment="CENTER">
                      <children>
-                        <AnchorPane layoutX="123.0" layoutY="87.0" prefHeight="537.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <AnchorPane fx:id="info_form" layoutX="123.0" layoutY="87.0" prefHeight="537.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
                               <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="511.0" prefWidth="575.0" styleClass="white-bg" stylesheets="@../CSS/dashboard.css" />
                               <AnchorPane layoutX="24.0" layoutY="24.0" prefHeight="89.0" prefWidth="559.0" styleClass="white-bg" stylesheets="@../CSS/dashboard.css">
@@ -217,7 +217,7 @@
                               </AnchorPane>
                            </children>
                         </AnchorPane>
-                        <AnchorPane layoutX="13.0" layoutY="60.0" prefHeight="537.0" prefWidth="587.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <AnchorPane fx:id="book_room_form" layoutX="13.0" layoutY="60.0" prefHeight="537.0" prefWidth="587.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
                               <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="510.0" prefWidth="573.0" stylesheets="@../CSS/dashboard.css">
                                  <styleClass>
@@ -275,7 +275,7 @@
                               </AnchorPane>
                            </children>
                         </AnchorPane>
-                        <AnchorPane layoutX="63.0" layoutY="69.0" prefHeight="537.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <AnchorPane fx:id="finance_form" layoutX="63.0" layoutY="69.0" prefHeight="537.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
                               <AnchorPane layoutX="14.0" layoutY="12.0" prefHeight="511.0" prefWidth="571.0" styleClass="shadow" stylesheets="@../CSS/dashboard.css">
                                  <children>
@@ -293,17 +293,17 @@
                               </AnchorPane>
                            </children>
                         </AnchorPane>
-                        <AnchorPane layoutX="8.0" layoutY="38.0" prefHeight="537.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <AnchorPane fx:id="profile_form" layoutX="8.0" layoutY="38.0" prefHeight="537.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
-                              <AnchorPane layoutX="16.0" layoutY="14.0" prefHeight="505.0" prefWidth="567.0" stylesheets="@../CSS/dashboard.css">
+                              <AnchorPane layoutX="6.0" layoutY="14.0" prefHeight="505.0" prefWidth="600.0" stylesheets="@../CSS/dashboard.css">
                                  <children>
                                     <AnchorPane layoutX="18.0" layoutY="9.0" prefHeight="484.0" prefWidth="244.0" styleClass="pane_color" stylesheets="@../CSS/dashboard.css">
                                        <children>
-                                          <AnchorPane layoutX="8.0" layoutY="9.0" prefHeight="468.0" prefWidth="227.0" styleClass="white-bg" stylesheets="@../CSS/dashboard.css">
+                                          <AnchorPane layoutX="8.0" layoutY="9.0" prefHeight="468.0" prefWidth="217.0" styleClass="white-bg" stylesheets="@../CSS/dashboard.css">
                                              <children>
-                                                <ImageView fitHeight="111.0" fitWidth="168.0" layoutX="75.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="round">
+                                                <ImageView fitHeight="111.0" fitWidth="191.0" layoutX="34.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="round">
                                                    <image>
-                                                      <Image url="@../../../../../resources/com/example/demo/Icons/photo.jpeg" />
+                                                      <Image url="@../Icons/profille.jpg" />
                                                    </image>
                                                    <effect>
                                                       <Lighting>

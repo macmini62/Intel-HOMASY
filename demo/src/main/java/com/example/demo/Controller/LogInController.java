@@ -85,7 +85,7 @@ public class LogInController implements Initializable {
                     alert.setContentText("Successfully Login!");
                     alert.showAndWait();
 
-                    try {
+                  try {
                         login_btn.getScene().getWindow().hide();
                         URL fxmlUrl = getClass().getResource("/com/example/demo/Views/dashboard.fxml");
                         Parent root = FXMLLoader.load(fxmlUrl);
@@ -93,8 +93,8 @@ public class LogInController implements Initializable {
                         Scene scene = new Scene(root);
                         stage.setScene(scene);
                         stage.show();
-                    }catch (Exception e){
-                        e.printStackTrace();
+                   }catch (Exception e){
+                       e.printStackTrace();
                     }
 
                 }else{
@@ -133,6 +133,12 @@ public class LogInController implements Initializable {
     }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+//        login_btn.setOnAction(new EventHandler<ActionEvent>() {
+//            @Override
+//            public void handle(ActionEvent event) {
+//                SceneController.changeScene(event,"/com/example/demo/Views/dashboard.fxml","Dashboard");
+//            }
+//        });
 
     }
     //close window method
