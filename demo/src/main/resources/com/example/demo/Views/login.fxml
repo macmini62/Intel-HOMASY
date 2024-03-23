@@ -32,7 +32,7 @@
                   </Label>
                   <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="110.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../resources/com/example/demo/Icons/home.png" />
+                        <Image url="@../Icons/home.png" />
                      </image>
                   </ImageView>
                </children>
@@ -56,14 +56,14 @@
                      <graphic>
                         <ImageView fx:id="image" fitHeight="30.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true" scaleX="0.5" scaleY="0.5">
                            <image>
-                              <Image url="@../../../../../resources/com/example/demo/Icons/close.png" />
+                              <Image url="@../Icons/close.png" />
                            </image>
                         </ImageView>
                      </graphic>
                   </Button>
                   <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="128.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../resources/com/example/demo/Icons/profile-user.png" />
+                        <Image url="@../Icons/profile-user.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="26.0" layoutY="546.0" text="Don't Have An Account?">

@@ -8,7 +8,6 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.effect.Light.Distant?>
 <?import javafx.scene.effect.Lighting?>
 <?import javafx.scene.effect.Shadow?>
 <?import javafx.scene.image.Image?>
@@ -19,7 +18,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller.DashboardController">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0">
          <children>
@@ -33,14 +32,14 @@
                                  <graphic>
                                     <ImageView fitHeight="20.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../../resources/com/example/demo/Icons/close.png" />
+                                          <Image url="@../Icons/close.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
                               </Button>
                               <ImageView fitHeight="60.0" fitWidth="200.0" layoutX="1.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="739.0" AnchorPane.topAnchor="2.0">
                                  <image>
-                                    <Image url="@../../../../../resources/com/example/demo/Icons/home.png" />
+                                    <Image url="@../Icons/home.png" />
                                  </image>
                               </ImageView>
                               <Label layoutX="77.0" layoutY="22.0" text="Intel Management System">
@@ -52,7 +51,7 @@
                                  <graphic>
                                     <ImageView fitHeight="20.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../../resources/com/example/demo/Icons/delete.png" />
+                                          <Image url="@../Icons/delete.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -63,13 +62,13 @@
                   </AnchorPane>
                </top>
                <left>
-                  <AnchorPane fx:id="left_pane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                  <AnchorPane fx:id="left_pane" prefHeight="537.0" prefWidth="165.0" BorderPane.alignment="CENTER">
                      <children>
                         <AnchorPane fx:id="left_inner_pane" layoutY="-2.0" prefHeight="540.0" prefWidth="200.0" styleClass="nav-form" stylesheets="@../CSS/dashboard.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0">
                            <children>
                               <ImageView fx:id="profile_img" fitHeight="100.0" fitWidth="150.0" layoutX="50.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="8.0">
                                  <image>
-                                    <Image url="@../../../../../resources/com/example/demo/Icons/profile-user.png" />
+                                    <Image url="@../Icons/profile-user.png" />
                                  </image>
                               </ImageView>
                               <Label fx:id="welcome_label" alignment="CENTER" contentDisplay="CENTER" layoutX="63.0" layoutY="115.0" text="Welcome">
@@ -87,7 +86,7 @@
                                  <graphic>
                                     <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5" scaleZ="1.5">
                                        <image>
-                                          <Image url="@../../../../../resources/com/example/demo/Icons/home (1).png" />
+                                          <Image url="@../Icons/home (1).png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -96,7 +95,7 @@
                                  <graphic>
                                     <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
                                        <image>
-                                          <Image url="@../../../../../resources/com/example/demo/Icons/user.png" />
+                                          <Image url="@../Icons/user.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -105,7 +104,7 @@
                                  <graphic>
                                     <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
                                        <image>
-                                          <Image url="@../../../../../resources/com/example/demo/Icons/notification.png" />
+                                          <Image url="@../Icons/notification.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -114,7 +113,7 @@
                                  <graphic>
                                     <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
                                        <image>
-                                          <Image url="@../../../../../resources/com/example/demo/Icons/hand.png" />
+                                          <Image url="@../Icons/hand.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -123,7 +122,7 @@
                                  <graphic>
                                     <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
                                        <image>
-                                          <Image url="@../../../../../resources/com/example/demo/Icons/review.png" />
+                                          <Image url="@../Icons/review.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -132,7 +131,7 @@
                                  <graphic>
                                     <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
                                        <image>
-                                          <Image url="@../../../../../resources/com/example/demo/Icons/chat.png" />
+                                          <Image url="@../Icons/chat.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -141,7 +140,7 @@
                                  <graphic>
                                     <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" scaleX="1.5" scaleY="1.5">
                                        <image>
-                                          <Image url="@../../../../../resources/com/example/demo/Icons/logout.png" />
+                                          <Image url="@../Icons/logout.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -152,7 +151,7 @@
                   </AnchorPane>
                </left>
                <center>
-                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                  <AnchorPane prefHeight="537.0" prefWidth="589.0" BorderPane.alignment="CENTER">
                      <children>
                         <AnchorPane layoutX="123.0" layoutY="87.0" prefHeight="537.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
@@ -218,7 +217,7 @@
                               </AnchorPane>
                            </children>
                         </AnchorPane>
-                        <AnchorPane layoutX="136.0" layoutY="60.0" prefHeight="537.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <AnchorPane layoutX="13.0" layoutY="60.0" prefHeight="537.0" prefWidth="587.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
                               <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="510.0" prefWidth="573.0" stylesheets="@../CSS/dashboard.css">
                                  <styleClass>
@@ -280,7 +279,7 @@
                            <children>
                               <AnchorPane layoutX="14.0" layoutY="12.0" prefHeight="511.0" prefWidth="571.0" styleClass="shadow" stylesheets="@../CSS/dashboard.css">
                                  <children>
-                                    <TableView fx:id="center_table_pane" layoutX="14.0" layoutY="14.0" onSort="#user_finance_table" prefHeight="476.0" prefWidth="544.0" stylesheets="@../CSS/dashboard.css">
+                                    <TableView fx:id="center_table_pane" layoutX="14.0" layoutY="14.0" prefHeight="476.0" prefWidth="544.0" stylesheets="@../CSS/dashboard.css">
                                       <columns>
                                           <TableColumn fx:id="finance_index_clmn" prefWidth="75.0" text="Index" />
                                         <TableColumn fx:id="finance_roomNo_clmn" prefWidth="75.0" text="Room No" />
@@ -294,7 +293,7 @@
                               </AnchorPane>
                            </children>
                         </AnchorPane>
-                        <AnchorPane layoutX="8.0" layoutY="38.0" prefHeight="537.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <AnchorPane layoutX="8.0" layoutY="38.0" prefHeight="537.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
                               <AnchorPane layoutX="16.0" layoutY="14.0" prefHeight="505.0" prefWidth="567.0" stylesheets="@../CSS/dashboard.css">
                                  <children>

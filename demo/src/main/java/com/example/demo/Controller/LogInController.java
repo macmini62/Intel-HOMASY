@@ -87,7 +87,8 @@ public class LogInController implements Initializable {
 
                     try {
                         login_btn.getScene().getWindow().hide();
-                        Parent root = FXMLLoader.load(getClass().getResource("../views/dashboard.fxml"));
+                        URL fxmlUrl = getClass().getResource("/com/example/demo/Views/dashboard.fxml");
+                        Parent root = FXMLLoader.load(fxmlUrl);
                         Stage stage = new Stage();
                         Scene scene = new Scene(root);
                         stage.setScene(scene);
