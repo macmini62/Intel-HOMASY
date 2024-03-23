@@ -60,7 +60,7 @@ public class LogInController implements Initializable {
     public void loginUser(){
         Alert alert;
 
-        String sql = "SELECT * FROM users WHERE username = ? and password = ?";
+        String sql = "SELECT * FROM login WHERE Name = ? and Password = ?";
         connection = DBConnection.dbConnection();
 
         try{
@@ -74,7 +74,7 @@ public class LogInController implements Initializable {
             if(username.getText().isEmpty() || password.getText().isEmpty()){
                 alert = new Alert(Alert.AlertType.ERROR);
                 alert.setTitle("Error");
-                alert.setContentText("Please Fill in All Fileds");
+                alert.setContentText("Please Fill in All Fields");
                 alert.show();
             }else{
                 //return true if there is a matching record

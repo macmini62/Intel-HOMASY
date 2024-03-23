@@ -71,7 +71,7 @@
                         <Font name="Serif Bold" size="13.0" />
                      </font>
                   </Label>
-                  <Button fx:id="signup_btn" layoutX="209.0" layoutY="539.0" mnemonicParsing="false" style="-fx-background-color: blue; -fx-cursor: hand;" styleClass="close" stylesheets="@../CSS/login.css" text="Sign Up" textFill="#104de8" underline="true" />
+                  <Button fx:id="signup_btn" layoutX="209.0" layoutY="539.0" mnemonicParsing="false" style="-fx-cursor: hand;" styleClass="close" stylesheets="@../CSS/login.css" text="Sign Up" textFill="#104de8" underline="true" />
                </children>
             </AnchorPane>
          </children>

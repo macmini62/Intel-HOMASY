@@ -12,9 +12,9 @@ public class DBConnection {
 
     public static Connection dbConnection(){
         try{
-            Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/Intel","root","");
+            Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/intel","root","password");
+            System.out.println("Connection with Database successful.");
             return connect;
-            //System.out.println("Connection success");
         }catch (Exception e){
             e.printStackTrace();
         }
