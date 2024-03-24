@@ -27,7 +27,6 @@ public class HelloApplication extends Application {
         Parent root = FXMLLoader.load(fxmlUrl);
         Scene scene = new Scene(root);
 
-
         stage.initStyle(StageStyle.TRANSPARENT);
 
         stage.setTitle("LogIn");

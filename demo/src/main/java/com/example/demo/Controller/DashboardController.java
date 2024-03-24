@@ -161,22 +161,22 @@ public class DashboardController implements Initializable {
             book_room_form.setVisible(true);
             info_form.setVisible(false);
             finance_form.setVisible(false);
-            profile_form.setVisible(false);
+//            profile_form.setVisible(false);
         }else if(event.getSource() == finances_btn){
             finance_form.setVisible(true);
             info_form.setVisible(false);
             book_room_form.setVisible(false);
-            profile_form.setVisible(false);
-        }else if(event.getSource() == profile_btn){
-            profile_form.setVisible(true);
-            info_form.setVisible(false);
-            finance_form.setVisible(false);
-           book_room_form.setVisible(false);
+//            profile_form.setVisible(false);
+//        }else if(event.getSource() == profile_btn){
+//            profile_form.setVisible(true);
+//            info_form.setVisible(false);
+//            finance_form.setVisible(false);
+//           book_room_form.setVisible(false);
         }else if(event.getSource() == notifications_btn){
             info_form.setVisible(true);
             book_room_form.setVisible(false);
             finance_form.setVisible(false);
-            profile_form.setVisible(false);
+//            profile_form.setVisible(false);
         }
 
     }
